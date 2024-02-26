@@ -3,10 +3,10 @@ server:
 
 spring:
   application:
-    name: discovery-service
+    name: eureka-service
   cloud:
     config:
       name: config
       uri:
   profiles:
-    active: prod
+    active: eureka-prod
