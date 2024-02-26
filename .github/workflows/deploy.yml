@@ -23,7 +23,7 @@ jobs:
         with:
           files: ./src/main/resources/bootstrap-prod.yml
         env:
-          spring.cloud.config.uri: ${{ secrets.DEVSEO_SERVER_PUBLIC_IP }}
+          spring.cloud.config.uri: http://${{ secrets.DEVSEO_SERVER_PUBLIC_IP }}:9999
 
       - name: Set up JDK 17
         uses: actions/setup-java@v1
