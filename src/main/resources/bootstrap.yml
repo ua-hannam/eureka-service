@@ -1,0 +1,18 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-service
+  cloud:
+    config:
+      name: config
+      uri:
+  profiles:
+    active: eureka-prod
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans
