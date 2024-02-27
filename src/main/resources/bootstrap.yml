@@ -7,9 +7,14 @@ spring:
   cloud:
     config:
       name: config
-      uri:
+      uri: http://211.205.161.133:9999
   profiles:
     active: eureka-prod
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
 
 management:
   endpoints:
